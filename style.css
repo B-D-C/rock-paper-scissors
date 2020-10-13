@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 500px;
+  margin: 0 auto;
+}
+.score {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.score h2 {
+  justify-self: center;
+}
+h1 {
+  text-align: center;
+}
+.controls {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+button {
+  margin: 10px;
+}
+h3 {
+  text-align: center;
+}
+
+
+

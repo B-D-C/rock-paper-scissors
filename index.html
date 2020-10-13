@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset = "UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-    <script src="script.js"></script>
+  <div class = "wrapper">
+    <h1>Rock Paper Scissors</h1>
+    <div class = "controls">
+      <button id = "resetButton" onclick = "rockPaperScissors.resetScore()">Reset</button>
+      <form>
+        <label for = "playerSelection">Choose a weapon:</label>
+        <select id = "playerSelection" name="playerSelection">
+          <option value = "Rock">Rock</option>
+          <option value = "Paper">Paper</option>
+          <option value = "Scissors">Scissors</option>
+        </select>
+        <input type = "submit" onclick = "playGame.playRound(); return false;">
+      </form>      
+    </div>    
+    <div class = "score">
+      <h2>Player</2>
+      <h2>Computer</h2>
+      <h2 id = "playerScore">0</h2>
+      <h2 id = "computerScore">0</h2>
+    </div>
+    <h3 id = "feedback"></h3>
+  </div>
+  
+
+
+
+
+
+  <script src = "script.js"></script>
 </body>
 </html>
